@@ -2,14 +2,13 @@
 local M = {}
 
 M.ui = {
-  theme = "rosepine",
-  transparency = false,
+  theme = "chadracula",
+  transparency = true,
   telescope = {
     style = "bordered",
   }, -- borderless / bordered
   statusline = {
-    theme = "vscode_colored",
-    --separator_style = "default",
+    separator_style = "default",
   },
 }
 M.plugins = "custom.plugins"
