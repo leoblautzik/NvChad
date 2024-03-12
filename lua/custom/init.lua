@@ -1,13 +1,21 @@
+local opt = vim.opt
 --vim.opt.scrolloff = 999
 --vim.opt.virtualedit = "block"
 --vim.opt.cursorline = true
-vim.opt.relativenumber = true
+opt.relativenumber = true
 -- Undoes NvChad's effect of clearing CursorLine
 -- vim.api.nvim_create_autocmd({ "VimEnter" }, {
 --   pattern = { "*" },
 --   command = "highlight link CursorLine CursorColumn",
 -- })
-vim.opt.undodir = os.getenv "HOME" .. "/.cache/nvim/undodir"
+
+-- Indenting
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.smartindent = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.undodir = os.getenv "HOME" .. "/.cache/nvim/undodir"
 
 local lastplace = vim.api.nvim_create_augroup("LastPlace", {})
 vim.api.nvim_clear_autocmds { group = lastplace }
