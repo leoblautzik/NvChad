@@ -3,7 +3,7 @@ local M = {}
 
 M.ui = {
   theme = "catppuccin",
-  transparency = false,
+  transparency = true,
   telescope = {
     style = "bordered",
   }, -- borderless / bordered

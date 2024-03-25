@@ -1,10 +1,10 @@
 local plugins = {
 
     {
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end,
+        --"williamboman/mason.nvim",
+        --config = function()
+        --    require("mason").setup()
+        --end,
         -- opts = {
         --   ensure_installed = {
         --     "lua_ls",
