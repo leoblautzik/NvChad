@@ -12,19 +12,19 @@ M.general = {
             end,
             "toggle transparency",
         },
-        ["<leader>rnt"] = {
+        ["<leader>tn"] = {
             function()
                 require("neotest").run.run()
             end,
             "Run the nearest test",
         },
-        ["<leader>rat"] = {
+        ["<leader>ta"] = {
             function()
                 require("neotest").run.run(vim.fn.expand "%")
             end,
             "Run all tests in current file",
         },
-        ["<leader>st"] = {
+        ["<leader>ts"] = {
             function()
                 --require("neotest").output_panel.toggle()
                 require("neotest").summary.toggle()
@@ -32,12 +32,12 @@ M.general = {
             end,
             "Summary Test toggle",
         },
-        ["<leader>sti"] = {
+        ["<leader>ti"] = {
             function()
                 require("neotest").output.open { enter = true }
                 --require("neotest").output_panel.toggle()
             end,
-            "Summary Test toggle",
+            "Show test output",
         },
     },
     t = {
