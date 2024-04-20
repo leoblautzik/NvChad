@@ -6,8 +6,10 @@
 2- Obviamente, instalar neovim. En Arch "sudo pacman -S neovim", en las basadas en debian hay que usar la appimage de neovim.  Sino, googlear. 
 
 3- Clonar mi repo tuneado:  
-"git clone https://github.com/leoblautzik/NvChad.git ~/.config/nvim"
-	Ejecutar nvim y se comenzarán a instalar todos los plugins. Salir y volver a entrar, no debería haber errores. Caso contrario hacer paso 4 y volver a intentar. 
+```
+git clone https://github.com/leoblautzik/NvChad.git ~/.config/nvim
+```
+Ejecutar nvim y se comenzarán a instalar todos los plugins. Salir y volver a entrar, no debería haber errores. Caso contrario hacer paso 4 y volver a intentar. 
 
 4- Ejecutar en terminal (solo para go): 
 ```
