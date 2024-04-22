@@ -2,6 +2,7 @@ local M = {}
 
 M.general = {
     n = {
+        -- Para usar los modos de vim correctanente
         ["<Up>"] = { "<Nop>" },
         ["<Down>"] = { "<Nop>" },
         ["<Left>"] = { "<Nop>" },
@@ -9,6 +10,7 @@ M.general = {
         ["<PageUp>"] = { "<Nop>" },
         ["<PageDown>"] = { "<Nop>" },
         ["<Del>"] = { "<Nop>" },
+        -- vim-tmux navigator
         ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
         ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
         ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
