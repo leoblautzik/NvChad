@@ -3,6 +3,7 @@ local M = {}
 M.general = {
     n = {
         -- Para usar los modos de vim correctanente
+        ["<Home>"] = { "<Nop>" },
         ["<Up>"] = { "<Nop>" },
         ["<Down>"] = { "<Nop>" },
         ["<Left>"] = { "<Nop>" },
@@ -48,6 +49,15 @@ M.general = {
             end,
             "Show test output",
         },
+    },
+    i = {
+        ["<Home>"] = { "<Nop>" },
+        ["<Up>"] = { "<Nop>" },
+        ["<Down>"] = { "<Nop>" },
+        ["<Left>"] = { "<Nop>" },
+        ["<Right>"] = { "<Nop>" },
+        ["<PageUp>"] = { "<Nop>" },
+        ["<PageDown>"] = { "<Nop>" },
     },
     t = {
         ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
